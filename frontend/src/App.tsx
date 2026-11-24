@@ -1,11 +1,15 @@
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <main className="page">
-      <h1>Prince Kumar</h1>
-      <p>Full-Stack and AI Engineer</p>
-    </main>
+    <>
+      <Navbar />
+      <main className="page" id="top">
+        <h1>Prince Kumar</h1>
+        <p>Full-Stack and AI Engineer</p>
+      </main>
+    </>
   )
 }
 
