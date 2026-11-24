@@ -1,0 +1,35 @@
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  background: var(--card);
+  padding: 14px 0;
+  white-space: nowrap;
+}
+
+.track {
+  display: inline-flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.track span {
+  margin: 0 26px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.marquee:hover .track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

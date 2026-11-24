@@ -1,10 +1,11 @@
 import { useInView } from '../hooks/useInView'
+import { SKILLS } from '../data/skills'
 import Counter from './Counter'
 import './About.css'
 
 const STATS = [
   { value: 150, label: 'LeetCode problems targeted' },
-  { value: 19, label: 'Technologies' },
+{ value: SKILLS.length, label: 'Technologies' },
   { value: 3, label: 'Featured projects' },
   { value: 2027, label: 'Graduating' },
 ]
