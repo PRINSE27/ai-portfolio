@@ -35,3 +35,10 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   line-height: 1.6;
 }
+
+.gradient {
+  background: linear-gradient(90deg, var(--a), var(--c), var(--b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,60 @@
+.about {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 100px 5vw;
+}
+
+.about h2 {
+  font-size: clamp(28px, 5vw, 48px);
+  letter-spacing: -1.5px;
+  margin: 0 0 8px;
+}
+
+.sub {
+  color: var(--muted);
+  margin: 0 0 36px;
+  max-width: 640px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+.stat b {
+  display: block;
+  font-size: 40px;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(46px);
+  transition: opacity 1s, transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
