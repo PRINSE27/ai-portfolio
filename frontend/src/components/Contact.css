@@ -1,0 +1,90 @@
+.contact {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 100px 5vw;
+}
+
+.contact h2 {
+  font-size: clamp(28px, 5vw, 44px);
+  letter-spacing: -1.5px;
+  margin: 0 0 8px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.contact-links a {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  background: var(--card);
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.contact-links a:hover {
+  transform: translateY(-3px);
+  border-color: var(--a);
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.form input,
+.form textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid var(--a);
+  outline-offset: 1px;
+}
+
+.send {
+  padding: 13px 24px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--a), var(--c));
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.note {
+  margin: 0;
+  font-size: 14px;
+}
+
+.note.error {
+  color: var(--c);
+}
+
+.note.ok {
+  color: var(--b);
+}
