@@ -2,6 +2,7 @@ import { useInView } from '../hooks/useInView'
 import { SKILLS } from '../data/skills'
 import Counter from './Counter'
 import './About.css'
+import SkillSphere from './SkillSphere'
 
 const STATS = [
   { value: 150, label: 'LeetCode problems targeted' },
@@ -37,6 +38,7 @@ function About() {
           </div>
         ))}
       </div>
+      <SkillSphere />
     </section>
   )
 }
